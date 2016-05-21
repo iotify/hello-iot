@@ -25,12 +25,14 @@ GPIO.setup(doorSensor, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Button pin set
 GPIO.setup(windowSensor, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Button pin set
 sht = SHT21(1)
 
+print("Your dashboard is available at https://dweet.io/follow/"+sender)
 time.sleep(1.0)
 alarm = False
 
 
 # Initial state for LEDs:
 GPIO.output(alarmOut, GPIO.LOW)
+
 
 print("Here we go! Press CTRL+C to exit")
 try:
