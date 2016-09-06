@@ -2,6 +2,7 @@
 # This file is used to post GPS data to dweet.io via GPSD.
 # To run this file please install necessary components as follows
 # sudo apt-get install -y gpsd gpsd-clients python-gps
+# Then simulate GPS via gpsfake -o -n -c 0.1 gpslogs.txt   
 
 import os
 from gps import *
